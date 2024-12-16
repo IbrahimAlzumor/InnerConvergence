@@ -1,0 +1,55 @@
+<div id="container">
+  <nav id="sidebar">
+    <img Src="OblivionForgeLogoNew.png" alt="Genesis Project Logo" class=center id="logo">
+    @for (item of menu; track item) {
+      <h2>{{ item.mainTitle }}</h2>
+      @for (sub of item.subTitles; track sub) {
+        <a [href]="sub.link" target="_blank"> {{ sub.title }}</a>
+      }
+    }
+  </nav>
+  <main>
+    <header id="banner">
+      <h1>Welcome to Oblivion Forge</h1>
+      <p>Unveiling new dimensions in gaming</p>
+    </header>
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Oblivion Forge is a passionate game development studio dedicated to crafting immersive, story-rich experiences.
+        Our first project, <strong>Inner Convergence</strong>, blends psychological intrigue, strategic gameplay, and a
+        deep narrative that stays with you long after you play.
+      </p>
+    </section>
+    <section id="game">
+      <h2>Inner Convergence</h2>
+      <p>
+        <strong>Inner Convergence</strong> is not just a game—it’s a journey. Follow the mystery of a cursed game
+        discovered in an old lockbox, where the boundaries between reality and digital worlds blur.
+      </p>
+      <h3>Key Features:</h3>
+      <ul>
+        <li>Interactive narrative where your choices matter.</li>
+        <li>Unique chess gameplay with a haunting twist.</li>
+        <li>AI-driven characters with mysterious backstories.</li>
+      </ul>
+    </section>
+    <section id="latest-news">
+      <h2>Latest News</h2>
+      <div class="news">
+        <h3>Inner Convergence Announced!</h3>
+        <p>
+          We’re thrilled to share that <strong>Inner Convergence</strong> will be launching soon. Stay tuned for
+          updates!
+        </p>
+      </div>
+    </section>
+    <section id="teaser">
+      <h2>Game Teaser</h2>
+      <p>Explore the unsettling world of Inner Convergence.</p>
+    </section>
+  </main>
+</div>
+<footer class="footer">
+  <p>&copy; 2002 OblivionForge</p>
+</footer>
