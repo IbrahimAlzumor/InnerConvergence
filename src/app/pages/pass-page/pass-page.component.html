@@ -1,6 +1,5 @@
 <div id="overlay">
   <div class="password-container">
-    <!--    <p>Enter Password</p>-->
     <input type="password" [(ngModel)]="passwordInput" placeholder="Type Password"
            (keyup.enter)="checkPassword()"/>
     <button (click)="checkPassword()">Submit</button>

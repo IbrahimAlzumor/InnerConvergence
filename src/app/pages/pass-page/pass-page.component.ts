@@ -11,28 +11,29 @@ import {Router} from '@angular/router';
 })
 export class PassPageComponent {
   passwordInput: string = '';
-  correctPassword: string = 's';
+  emailPassword: string = 'email';
+  blackPassword: string = 'blackscreen';
+  alvaroPassword: string = 'alvaro';
+  ibrahimPassword: string = 'ibrahim';
 
   constructor(private router: Router) {
   }
 
   checkPassword() {
     console.log("this.passwordInput", this.passwordInput)
-    if (this.passwordInput === this.correctPassword) {
-      if (localStorage.getItem("authenticated") === "true") {
-        alert('A tab is already open')
-        this.passwordInput = '';
-        return
-      }
-
-      localStorage.setItem("authenticated", "true")
-      sessionStorage.setItem('isAuthenticated', 'true');
+    if (this.passwordInput === this.emailPassword) {
       this.router.navigate(['email']);
-      // setTimeout(() => {
-      // localStorage.removeItem('isAuthenticated');
-      // this.router.navigate(['/']);
-      // }, 2000);
-    } else {
+    } 
+    else if (this.passwordInput === this.blackPassword) {
+      this.router.navigate(['blackscreen']);
+    } 
+    else if (this.passwordInput === this.alvaroPassword) {
+      this.router.navigate(['alvaro']);
+    } 
+    else if (this.passwordInput === this.alvaroPassword) {
+      this.router.navigate(['alvaro']);
+    } 
+    else {
       alert('Incorrect password. Please try again.');
       this.passwordInput = '';
     }

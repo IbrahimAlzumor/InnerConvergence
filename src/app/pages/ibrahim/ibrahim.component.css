@@ -1,0 +1,40 @@
+/* 
+   Container that takes up the full screen with a black background 
+   and hides the text in normal view.
+*/
+.dark-wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 
+   Inner container to nicely center and constrain the text width, 
+   and set the default font/color to “off-black” for text.
+*/
+.report-content {
+  max-width: 600px;
+  padding: 2rem;
+  font-family: "Georgia", serif;
+  color: #010101; /* Slightly lighter than #000, so inversion is visible (#ddd) */
+}
+
+/* Title styling */
+.report-title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Body text styling */
+.report-excerpt {
+  font-size: 1rem;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}

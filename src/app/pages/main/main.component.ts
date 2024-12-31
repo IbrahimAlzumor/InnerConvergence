@@ -23,7 +23,7 @@ export class MainComponent implements AfterViewInit {
       subTitles: [
         {
           title: 'Oblivion Technology',
-          link: 'https://docs.google.com/document/d/1BeaAkcyctEKoc98mojvSdbl8__1MOpJO12rADvfT-sY/edit?tab=t.0'
+          link: 'https://OblivionForgeTechnology.com'
         },
       ]
     },
@@ -32,11 +32,11 @@ export class MainComponent implements AfterViewInit {
       subTitles: [
         {
           title: 'Oblivion Games Forums',
-          link: 'https://docs.google.com/document/d/1BeaAkcyctEKoc98mojvSdbl8__1MOpJO12rADvfT-sY/edit?tab=t.0'
+          link: 'https://OblivionForgeCommunity.com'
         },
         {
           title: 'Oblivion Developer Network',
-          link: 'https://docs.google.com/document/d/1BeaAkcyctEKoc98mojvSdbl8__1MOpJO12rADvfT-sY/edit?tab=t.0'
+          link: 'https://OblivionForgeNetwork.com'
         }
       ]
     },
@@ -45,7 +45,7 @@ export class MainComponent implements AfterViewInit {
       subTitles: [
         {
           title: 'Inner Convergence',
-          link: 'https://docs.google.com/document/d/1BeaAkcyctEKoc98mojvSdbl8__1MOpJO12rADvfT-sY/edit?tab=t.0'
+          link: 'https://InnerConvergence.com/'
         },
       ]
     },
