@@ -10,8 +10,10 @@ body {
 }
 
 div {
-  color: #070707;
+  color: #4e0000;
   font-size: large;
+  padding: 0px !important;
+  margin-bottom: 0px !important;
 }
 
 span {

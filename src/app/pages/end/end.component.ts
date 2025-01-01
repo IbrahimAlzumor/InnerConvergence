@@ -10,8 +10,12 @@ import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
   styleUrl: './end.component.css'
 })
 export class EndComponent {
-  
+  private rawHtml = "Ibrahim is Not Innocent"
 
-  constructor(private sanitizer: DomSanitizer) {
-  }
+public New: SafeHtml;
+
+
+constructor(private sanitizer: DomSanitizer) {
+  this.New = this.sanitizer.bypassSecurityTrustHtml(this.rawHtml);
+}
 }
