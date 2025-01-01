@@ -8,6 +8,7 @@ import { MainComponent } from './pages/main/main.component';
 import { IbrahimComponent } from './pages/ibrahim/ibrahim.component';
 import { EndComponent } from './pages/end/end.component';
 import { AuthGuard } from './auth.guard';
+import { AwadComponent } from './pages/awad/awad.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -18,5 +19,6 @@ export const routes: Routes = [
   { path: 'end', component: EndComponent, canActivate: [AuthGuard] },
   { path: 'alvaro', component: AlvaroComponent, canActivate: [AuthGuard] },
   { path: 'blackscreen', component: IbrahimComponent, canActivate: [AuthGuard] },
+  { path: 'innocent', component: AwadComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];

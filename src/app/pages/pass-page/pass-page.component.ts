@@ -18,6 +18,7 @@ export class PassPageComponent {
   alvaroPassword: string = 'alvaro';
   ibrahimPassword: string = 'ibrahim';
   endPassword: string = 'end';
+  innocentPassword: string = 'innocent';
 
   constructor(private router: Router, private authService: AuthService){
   }
@@ -44,6 +45,9 @@ export class PassPageComponent {
     }else if (this.passwordInput === this.endPassword) {
       this.authService.authenticateRoute('end');
       this.router.navigate(['end']);
+    }else if (this.passwordInput === this.innocentPassword) {
+      this.authService.authenticateRoute('innocent');
+      this.router.navigate(['innocent']);
     } else {
       alert('Incorrect password. Please try again.');
       this.passwordInput = '';
