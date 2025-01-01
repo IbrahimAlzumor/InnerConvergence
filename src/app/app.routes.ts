@@ -9,9 +9,11 @@ import { IbrahimComponent } from './pages/ibrahim/ibrahim.component';
 import { EndComponent } from './pages/end/end.component';
 import { AuthGuard } from './auth.guard';
 import { AwadComponent } from './pages/awad/awad.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
-  { path: '', component: MainComponent },
+  { path: '', component: AppComponent },
+  { path: 'main', component: MainComponent },
   { path: 'news', component: NewsPageComponent }, 
   { path: 'login', component: PassPageComponent },
   { path: 'email', component: EmailPageComponent, canActivate: [AuthGuard] },
