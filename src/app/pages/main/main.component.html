@@ -1,6 +1,7 @@
 <div id="container">
   <nav id="sidebar">
     <img Src="OblivionForgeLogoNew.png" alt="Oblivion Forge Logo" class=center id="logo">
+
     @for (item of menu; track item) {
       <h2>{{ item.mainTitle }}</h2>
       @for (sub of item.subTitles; track sub) {

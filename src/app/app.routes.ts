@@ -1,44 +1,22 @@
-import {Routes} from '@angular/router';
-import {EmailPageComponent} from './pages/email-page/email-page.component';
-import {PassPageComponent} from './pages/pass-page/pass-page.component';
+import { Routes } from '@angular/router';
+import { EmailPageComponent } from './pages/email-page/email-page.component';
+import { PassPageComponent } from './pages/pass-page/pass-page.component';
 import { NewsPageComponent } from './pages/news-page/news-page.component';
 import { AlvaroComponent } from './pages/alvaro/alvaro.component';
 import { DarkTextComponent } from './pages/dark-text/dark-text.component';
 import { MainComponent } from './pages/main/main.component';
 import { IbrahimComponent } from './pages/ibrahim/ibrahim.component';
 import { EndComponent } from './pages/end/end.component';
+import { AuthGuard } from './auth.guard';
 
 export const routes: Routes = [
-  {
-    path: '',
-    component: MainComponent,
-  },
-  {
-    path: 'News',
-    component: NewsPageComponent,
-  },
-  {
-    path: 'Login',
-    component: PassPageComponent,
-  },
-  {
-    path: 'Email',
-    component: EmailPageComponent,
-  },
-  {
-    path: 'Ibrahim',
-    component: DarkTextComponent,
-  },
-  {
-    path: 'End',
-    component: EndComponent,
-  },
-  {
-    path: 'Alvaro',
-    component: AlvaroComponent,
-  },
-  {
-    path: 'BlackScreen',
-    component: IbrahimComponent,
-  }
+  { path: '', component: MainComponent },
+  { path: 'news', component: NewsPageComponent }, 
+  { path: 'login', component: PassPageComponent },
+  { path: 'email', component: EmailPageComponent, canActivate: [AuthGuard] },
+  { path: 'ibrahim', component: DarkTextComponent, canActivate: [AuthGuard] },
+  { path: 'end', component: EndComponent, canActivate: [AuthGuard] },
+  { path: 'alvaro', component: AlvaroComponent, canActivate: [AuthGuard] },
+  { path: 'blackscreen', component: IbrahimComponent, canActivate: [AuthGuard] },
+  { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];

@@ -4,9 +4,7 @@ import {NgOptimizedImage} from '@angular/common';
 @Component({
   selector: 'app-main',
   standalone: true,
-  imports: [
-    NgOptimizedImage
-  ],
+  imports: [],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })
@@ -50,6 +48,7 @@ export class MainComponent implements AfterViewInit {
       ]
     },
   ]
+
 
   ngAfterViewInit(): void {
     const query = document.getElementsByClassName(this.hideClass)
