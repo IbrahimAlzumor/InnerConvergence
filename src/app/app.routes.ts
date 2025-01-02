@@ -12,8 +12,7 @@ import { AwadComponent } from './pages/awad/awad.component';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'main', component: MainComponent },
+  { path: '', component: MainComponent },
   { path: 'news', component: NewsPageComponent }, 
   { path: 'login', component: PassPageComponent },
   { path: 'email', component: EmailPageComponent, canActivate: [AuthGuard] },
