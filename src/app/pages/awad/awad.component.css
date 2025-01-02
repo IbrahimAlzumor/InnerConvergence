@@ -8,7 +8,7 @@ html, body {
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #fafafa;
+  background-color: #000000;
 }
 .container {
   max-width: 1200px; 
@@ -114,7 +114,6 @@ body {
   margin-bottom: 1rem; 
   line-height: 1.6;
 }
-/* Sidebar */
 .sidebar {
   flex: 1 1 30%; 
   background: #f9f9f9; 

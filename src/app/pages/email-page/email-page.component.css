@@ -1,11 +1,11 @@
+
 .email-container {
-  height: 100%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
   color: black !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .email-table {
@@ -14,5 +14,4 @@
   width: 100%;
   padding: 30px;
   background: linear-gradient(to bottom, #f0f0f0, #e0e0e0) !important;
-
 }
