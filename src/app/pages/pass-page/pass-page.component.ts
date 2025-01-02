@@ -49,7 +49,6 @@ export class PassPageComponent {
       this.authService.authenticateRoute('innocent');
       this.router.navigate(['innocent']);
     } else {
-      alert('Incorrect password. Please try again.');
       this.passwordInput = '';
     }
   }
