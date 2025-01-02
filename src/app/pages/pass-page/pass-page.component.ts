@@ -19,6 +19,7 @@ export class PassPageComponent {
   ibrahimPassword: string = 'ibrahim';
   endPassword: string = 'end';
   innocentPassword: string = 'innocent';
+  flashBackground: boolean = false;
 
   constructor(private router: Router, private authService: AuthService){
   }
@@ -49,7 +50,14 @@ export class PassPageComponent {
       this.authService.authenticateRoute('innocent');
       this.router.navigate(['innocent']);
     } else {
+      this.triggerFlash();
       this.passwordInput = '';
     }
+  }
+  triggerFlash() {
+    this.flashBackground = true;
+    setTimeout(() => {
+      this.flashBackground = false;
+    }, 700); 
   }
 }

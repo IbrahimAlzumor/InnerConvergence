@@ -1,4 +1,4 @@
-<div id="overlay">
+<div id="overlay" [class.flash-red]="flashBackground">
   <div class="password-container">
     <input type="password" [(ngModel)]="passwordInput" placeholder="Type Password"
            (keyup.enter)="checkPassword()"/>

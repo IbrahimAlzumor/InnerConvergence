@@ -12,6 +12,12 @@
   z-index: 1000;
 }
 
+.flash-red {
+  background-color: rgb(77, 0, 0) !important;
+  transition: background-color 0.5s ease-in;
+  transition: background-color 0.5s ease-out;
+}
+
 .password-container {
   text-align: center;
 }
@@ -39,22 +45,3 @@
   color: black;
   border-radius: 4px;
 }
-
-/*.email-container {*/
-/*  height: 100%;*/
-/*  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);*/
-/*  color: black !important;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*  font-family: 'Courier New', Courier, monospace;*/
-/*}*/
-
-/*.email-table {*/
-/*  max-width: 800px;*/
-/*  min-width: 300px;*/
-/*  width: 100%;*/
-/*  padding: 30px;*/
-/*  background: linear-gradient(to bottom, #f0f0f0, #e0e0e0) !important;*/
-
-/*}*/
