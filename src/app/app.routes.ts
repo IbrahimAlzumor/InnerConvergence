@@ -10,6 +10,7 @@ import { EndComponent } from './pages/end/end.component';
 import { AuthGuard } from './auth.guard';
 import { AwadComponent } from './pages/awad/awad.component';
 import { AppComponent } from './app.component';
+import { redditComponent } from './pages/reddit/reddit.component';
 
 export const routes: Routes = [
   { path: '', component: MainComponent },
@@ -21,5 +22,6 @@ export const routes: Routes = [
   { path: 'alvaro', component: AlvaroComponent, canActivate: [AuthGuard] },
   { path: 'blackscreen', component: IbrahimComponent, canActivate: [AuthGuard] },
   { path: 'innocent', component: AwadComponent, canActivate: [AuthGuard] },
+  { path: 'reddit', component: redditComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '', pathMatch: 'full' } 
 ];

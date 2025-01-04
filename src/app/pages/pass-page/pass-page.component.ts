@@ -19,6 +19,7 @@ export class PassPageComponent {
   ibrahimPassword: string = 'ibrahim';
   endPassword: string = 'end';
   innocentPassword: string = 'innocent';
+  redditPassword: string = 'reddit';
   flashBackground: boolean = false;
 
   constructor(private router: Router, private authService: AuthService){
@@ -49,6 +50,9 @@ export class PassPageComponent {
     }else if (this.passwordInput === this.innocentPassword) {
       this.authService.authenticateRoute('innocent');
       this.router.navigate(['innocent']);
+    }else if (this.passwordInput === this.redditPassword) {
+      this.authService.authenticateRoute('reddit');
+      this.router.navigate(['reddit']);
     } else {
       this.triggerFlash();
       this.passwordInput = '';
